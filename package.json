@@ -1,7 +1,7 @@
 {
   "name": "@dy-kit/type-of",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "packageManager": "pnpm@9.4.0",
   "description": "提供了一个实用工具函数 typeOf，单个参数返回类型字符串，多个参数验证是否为同一类型。",
