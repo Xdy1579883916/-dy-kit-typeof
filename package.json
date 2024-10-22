@@ -1,18 +1,21 @@
 {
-  "name": "pkg-placeholder",
+  "name": "@dy-kit/type-of",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "private": false,
   "packageManager": "pnpm@9.4.0",
-  "description": "_description_",
+  "description": "提供了一个实用工具函数 typeOf，单个参数返回类型字符串，多个参数验证是否为同一类型。",
   "author": "XiaDeYu <1579883916@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/Xdy1579883916/pkg-placeholder#readme",
+  "homepage": "https://github.com/Xdy1579883916/typeof#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xdy1579883916/pkg-placeholder.git"
+    "url": "git+https://github.com/Xdy1579883916/typeof.git"
   },
-  "bugs": "https://github.com/Xdy1579883916/pkg-placeholder/issues",
-  "keywords": [],
+  "bugs": "https://github.com/Xdy1579883916/typeof/issues",
+  "keywords": [
+    "type-check"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -38,7 +41,7 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
@@ -46,21 +49,25 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.0",
+    "@antfu/eslint-config": "^3.8.0",
     "@antfu/ni": "^0.21.12",
     "@antfu/utils": "^0.7.10",
-    "@types/node": "^20.14.10",
-    "bumpp": "^9.4.1",
-    "eslint": "^9.7.0",
-    "esno": "^4.7.0",
-    "lint-staged": "^15.2.7",
-    "pnpm": "^9.5.0",
-    "rimraf": "^5.0.9",
+    "@types/node": "^22.7.7",
+    "bumpp": "^9.7.1",
+    "eslint": "^9.13.0",
+    "esno": "^4.8.0",
+    "lint-staged": "^15.2.10",
+    "pnpm": "^9.12.2",
+    "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.5.3",
+    "typescript": "^5.6.3",
     "unbuild": "^2.0.0",
-    "vite": "^5.3.3",
+    "vite": "^5.4.9",
     "vitest": "^1.6.0"
   },
   "simple-git-hooks": {
