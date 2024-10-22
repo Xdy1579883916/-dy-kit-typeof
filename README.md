@@ -54,5 +54,5 @@ console.log(typeOf(null, null)) // true
 [npm-downloads-href]: https://npmjs.com/package/@dy-kit/type-of
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/@dy-kit/type-of?style=flat&colorA=080f12&colorB=1fa669&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=@dy-kit/type-of
-[license-src]: https://img.shields.io/github/license/Xdy1579883916/@dy-kit/type-of.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-src]: https://img.shields.io/github/license/Xdy1579883916/typeof.svg?style=flat&colorA=080f12&colorB=1fa669
 [license-href]: https://github.com/Xdy1579883916/typeof/blob/main/LICENSE
